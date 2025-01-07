@@ -161,12 +161,6 @@ footer{
     text-align: center;
 }
 @media only screen and (max-width: 768px) {
-    #navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0;
-    }
-
     .head-title {
         width: 100%;
         justify-content: center;
