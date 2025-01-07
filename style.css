@@ -164,7 +164,6 @@ footer{
     #navbar {
         flex-direction: column;
         align-items: flex-start;
-        padding-right: 10px;
     }
 
     .head-title {
