@@ -56,6 +56,13 @@ main {
     width: 100%;
     display: flex;
     color: #ffffff;
+}
+.aboutme-title{
+    font-family: 'Double Pivot', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #D7A859;
+    font-size: 30px;
     margin-top: 60px;
 }
 article{
@@ -88,16 +95,15 @@ aside{
     text-align: center;
     padding-right: 20px;
 }
-aside h1{
+aside {
     display: flex;
+    align-items: center;
     justify-content: center;
-    color: #D7A859;
-    font-size: 30px;
 }
 aside img{
     margin-top: 20px;
-    width: 250px; 
-    height: 250px;
+    width: 400px; 
+    height: 400px;
     object-fit: cover;
     border-radius: 8px;
     transition: transform 0.3s ease; /* Transisi efek zoom */
@@ -124,12 +130,12 @@ aside img:hover {
     font-size: 1.4rem;
     font-weight: 700;
     margin: 0;
-    color: #E38E49;
+    color: #D7A859;
 }
 .experience-item h3 {
     font-size: 1.2rem;
     font-weight: 400;
-    color: #D7A859;
+    color: #E38E49;
     font-weight: bold;
     margin: 5px 0;
 }
@@ -156,6 +162,18 @@ aside img:hover {
     padding: 5px 10px;
     border-radius: 5px;
     margin-right: 5px;
+}
+.experience-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.experience-title h2{
+    width: 60%;
+}
+.experience-title h3{
+    width: 40%;
 }
 .certificate h1{
     display: flex;
@@ -185,7 +203,10 @@ footer{
         align-items: flex-start;
         padding-right: 10px;
     }
-
+    .aboutme-title{
+        font-size: 20px;
+        margin-top: 130px;
+    }
     .head-title {
         width: 100%;
         justify-content: center;
@@ -205,25 +226,37 @@ footer{
     }
 
     main {
-        flex-direction: column;
-        margin-top: 80px;
+        display: flex;
+        margin-top: 10px;
     }
 
     article {
-        width: 100%;
+        width: 50%;
         padding: 0 10px;
     }
-
+    article p {
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 12px;
+    }
     aside {
-        width: 100%;
+        width: 50%;
         padding: 0 10px;
+        align-items: start;
     }
 
     aside img {
-        height: auto;
+        height: 150px;
+        width: 150px;
     }
     aside img:hover {
         transform: none;
+    }
+    .experience-title{
+        width: 100%;
+    }
+    .experience-title h2, h3{
+        width: 50%;
     }
     footer {
         width: 100%;
@@ -236,6 +269,6 @@ footer{
     height: 200px;
     padding: 0;
     display: block;
-    margin: 0 auto;
+    margin: 0px auto 10px;
     }
 }
